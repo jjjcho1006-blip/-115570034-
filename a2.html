@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>115570034邱淨怡</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $("#lava_menu").lavaLamp({
+        fx: "backout",
+        speed: 700
+      });
+    });
+  </script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.pack.js"></script>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+<style type="text/css">
+    .hint-text { color: brown; font-size: 30pt; font-weight: bold; font-family: "標楷體"; margin: 15px 0; }
+    .stripe-btn { font-size: 30pt; font-weight: bold; font-family: "標楷體"; color: purple; cursor: pointer; }
+    #myTable { width: 90%; margin-top: 20px; }
+    #myTable td { color: purple; font-size: 30pt; font-weight: bold; text-align: center; font-family: "標楷體"; padding: 8px; }
+  </style>
+</head>
+<body>
+  <div id="main">	
+    <div id="site_content">  
+	  <div id="menubar">
+        <ul class="lavaLampWithImage" id="lava_menu">
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="a1.html">第1題</a></li>
+          <li class="current"><a href="a2.html">第2題</a></li>
+          <li><a href="a3.html">第3題</a></li>
+          <li><a href="a4.html">第4題</a></li>
+        </ul>
+	  </div><!--close menubar-->
+      <div id="header">  
+        <h1>115570034<span>邱淨怡</span></h1>	
+	    <h2>期中考</h2>
+      </div><!--close header-->
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+            <img src="images/slide1.jpg" alt="" />
+            <img src="images/slide2.jpg" alt="" />
+            <img src="images/slide3.jpg" alt="" />
+		  </div><!--close slider-->
+		</div><!--close slider-wrapper-->
+	  </div><!--close banner_image-->		  
+      <div id="content">
+        <div class="content_item">
+<div class="content_item">
+          <h1>設定表格條狀紋理</h1>
+          <div class="hint-text">顏色1：<button class="stripe-btn" onclick="applyStripe('pink')">粉紅</button></div>
+          <div class="hint-text">顏色2：<button class="stripe-btn" onclick="applyStripe('yellow')">黃色</button></div>
+          <table id="myTable" border="1">
+            <tr><td>姓名</td><td>數學</td></tr>
+            <tr><td>約翰</td><td>90</td></tr>
+            <tr><td>艾米</td><td>92</td></tr>
+            <tr><td>彼德</td><td>75</td></tr>
+            <tr><td>蘇珊</td><td>99</td></tr>
+            <tr><td>湯姆</td><td>62</td></tr>
+            <tr><td>傑克</td><td>72</td></tr>
+          </table>
+          <script type="text/javascript">
+            function applyStripe(color) {
+              var rows = document.getElementById("myTable").getElementsByTagName("tr");
+              for (var i = 0; i < rows.length; i++) {
+                if ((color === "pink" && (i + 1) % 2 === 1) ||
+                    (color === "yellow" && (i + 1) % 2 === 0)) {
+                  rows[i].style.backgroundColor = color;
+                }
+              }
+            }
+          </script>
+        </div><!--close content_item-->
+            <div class="sidebar_item">
+                <h2>Latest Blog</h2>
+			    <h4>April 2012</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		          <a href="#">Read more</a>
+              </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->     		
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+		  	  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+		  <div class="sidebar">
+            <div class="sidebar_item">
+              <h2>Latest Blog</h2>
+			  <h4>April 2012</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque cursus tempor enim.</p>
+		        <a href="#">Read more</a>
+            </div><!--close sidebar_item--> 
+          </div><!--close sidebar-->  
+        </div><!--close sidebar_container-->	
+       <br style="clear:both;" />
+      </div><!--close content-->	
+    </div><!--close site_content-->	
+    <div id="footer">  
+      <a href="http://validator.w3.org/check?uri=referer">Valid XHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a> | <a href="http://fotogrph.com/">Images</a> | 版權 115570034邱淨怡
+    </div><!--close footer-->	
+  </div><!--close main-->	
+</body>
+</html>
